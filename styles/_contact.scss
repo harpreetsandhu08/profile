@@ -1,0 +1,27 @@
+$padding:20px;
+$margin:30%;
+$bgcolor:lightgrey;
+.centerform
+{
+	display:flex;
+    flex-direction:column;
+    background-color:$bgcolor;
+    label
+    {
+    	padding:$padding;
+        margin-left: 20%;
+    }
+    input
+    {
+    	width:70%;
+    }
+}
+span{dispay:inline-block;color:red;}
+@media only screen and (min-width:60em)
+{.centerform 
+{
+    width:40%;
+    margin-left: $margin;
+    margin-right: $margin;
+}
+}

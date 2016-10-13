@@ -1,0 +1,25 @@
+$line-height:1.5em;
+$background-color: lightgrey;
+$default-color: lightpink;
+$margin:20px;
+$font-size:1.2em;
+$profile-padding:5px;
+h1{font-size:1.5em; color:maroon;}
+.post,.post2
+{
+	font-size:$font-size;
+	padding:$profile-padding;
+	margin:$margin;
+	background-color:$background-color;
+	line-height:$line-height;
+}
+@media only screen and (min-width:65em)
+{
+	.post,.post2
+	{
+		font-size:1.5em;
+        line-height: 1.5em;
+        width:80%;
+        margin:100px 150px 100px 150px;
+    }
+}
