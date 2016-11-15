@@ -2,15 +2,15 @@
   display: flex;
   flex-direction: column;
   background-color: lightgrey; }
-  .centerform label {
-    padding: 20px;
-    margin-left: 20%; }
-  .centerform input {
-    width: 70%; }
+.centerform label {
+  padding: 20px;
+   margin-left: 20%; }
+.centerform input {
+  width: 70%; }
 
 span {
   dispay: inline-block;
-  color: red; }
+  color: maroon; }
 
 @media only screen and (min-width: 60em) {
   .centerform {
@@ -21,19 +21,21 @@ h1 {
   font-size: 1.5em;
   color: maroon; }
 
-.post, .post2 {
+.post, .post2, .post3 {
   font-size: 1.2em;
-  padding: 5px;
-  margin: 20px;
-  background-color: lightgrey;
-  line-height: 1.5em; }
+ padding: 5px;
+  margin:  20px ;
+ background-color: lightgrey;
+  line-height: 1.5em;
+  height: 80%; }
 
 @media only screen and (min-width: 65em) {
-  .post, .post2 {
+  .post, .post2, .post3 {
     font-size: 1.5em;
     line-height: 1.5em;
     width: 80%;
-    margin: 100px 150px 100px 150px; } }
+    margin: 100px 150px 100px 150px; 
+    } }
 .bio {
   line-height: 1.2em;
   padding: 5px;
@@ -42,7 +44,7 @@ h1 {
   .bio h1 {
     font-family: cursive;
     color: maroon;
-    text-shadow: 5px 5px 60px green; }
+     }
   .bio h2 {
     font-size: 1.5em; }
 
@@ -53,11 +55,11 @@ h3, h4 {
   text-align: center; }
 
 p {
-  box-shadow: inset 2px 2px 60px green;
-  font-size: 1.5em;
+  box-shadow: inset 2px 2px 10px green;
+  font-size: 1.2em;
   line-height: 1.5em;
-  width: 80%;
-  padding: 5px;
+  
+  padding: 1px;
   width: 100%; }
 
 span {
@@ -101,12 +103,73 @@ img {
 
 @media only screen and (min-width: 65em) {
   header {
-    margin: 100px 150px 0 150px; }
+    margin: 0px 150px 0 150px;
 
-  p {
-    font-size: 1.5em;
+     }
+     header img
+     {
+      /*max-height: 200px;*/
+      width: 13%;
+     }
+ /* main
+  {
+   margin: 0px 150px 0 150px; 
+  }*/
+p {
+    font-size:1.2em;
     line-height: 1.5em;
-    width: 80%;
-    margin: 100px 150px 50px 100px; } }
+    width: 100%;
+   } }
+.tabs {
+  position: relative;   
+  max-height: 80%;  
+  clear: both;
+  margin-top: 30px;
+}
+.tab {
+  float: left;
 
+}
+.tab label {
+  border-top: 5px solid lightgreen;
+  box-shadow: inset 2px 2px 15px purple;
+  padding: 13px;
+  margin-left: -1px; 
+  position: relative;
+  left: 1px; 
+  
+}
+.tab [type=radio] {
+  display: none;   
+}
+.content {
+  position: absolute;
+  top: 28px;
+  left: 0;
+  background-color: grey; 
+  right: 0;
+  bottom:100px;
+  height: 600px;
+  border-top: 1px solid lightgreen;
+}
+[type=radio]:checked ~ label {
+  background: white;
+  box-shadow: inset 2px 2px 5px lightgreen;
+  border-top: 5px solid purple;
+  border-bottom: 2px solid white;
+  z-index: 2;
+}
+[type=radio]:checked ~ label ~ .content {
+  z-index: 1;
+   background: white;
+}
+
+footer
+{
+  position: absolute;
+  bottom: 0;
+  left:0;
+  right:0;
+  top:1050px;
+}
 /*# sourceMappingURL=Style.css.map */
